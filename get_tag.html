@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function showme(){
+			var sh=document.getElementsByTagName("li");
+			console.log(sh);
+			console.log("li values are"+sh[3].innerHTML);
+			for(i=0; i<sh.length;i++)
+				console.log(sh[i].innerHTML)
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>We are going to see about tag name property in todays session</h1>
+	<ul>
+		<li>JavaScript</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>ReactJS</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>ReactJS</li>
+	</ul>
+	<button onclick="showme()">Submit</button>
+</body>
+</html>

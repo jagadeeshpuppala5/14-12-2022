@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function thankU(){
+			var name=document.fv.name.value;// for text .innerHTML ,,, for input field value
+			// alert(name);
+			if(name==''){
+				alert("Please Enter Your Name");
+				return false;
+			}
+			if(name.length<3){
+				alert("Please Check Your Name");
+				return false
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h1>I am going to work on JavaScript Regular Expression</h1>
+	<form name="fv" onsubmit="return thankU()">
+		<p><input type="text" name="name" placeholder="Enter your name"/></p>
+		<p><input type="submit" value="Submit"/>
+			<input type="reset" value="Clear"/></p>
+	</form>
+</body>
+</html>
